@@ -1,0 +1,34 @@
+// less/_header.less
+@import '_variables.less';
+@import '_maps.less';
+
+header {
+    background-color: #cores[header];
+    padding: @espacamento-padrao 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        color: @cor-branca;
+        font-size: 24px;
+    }
+
+    nav {
+        ul {
+            display: flex;
+        }
+
+        li {
+            margin-left: @espacamento-padrao;
+        }
+
+        a {
+            color: @cor-branca;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+// less/_base.less
+@import '_variables.less';
+@import '_maps.less';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: ~"@{fonte-principal}"; // Requisito: Escaping
+    background-color: #cores[fundo];
+    color: @cor-texto;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

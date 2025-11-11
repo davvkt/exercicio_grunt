@@ -1,0 +1,54 @@
+// less/_products.less
+@import '_variables.less';
+@import '_maps.less';
+.products {
+    padding: (@espacamento-padrao * 2) 0;
+
+    h2 {
+        text-align: center;
+        margin-bottom: @espacamento-padrao;
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: @espacamento-padrao;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: @espacamento-padrao;
+
+    h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    p {
+        margin-bottom: @espacamento-padrao;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 8px @espacamento-padrao;
+        border: none;
+        border-radius: 5px;
+        background-color: #cores[primaria];
+        color: @cor-branca;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #cores[primaria-hover];
+        }
+    }
+
+    .btn-secondary {
+            background-color: #cores[secundaria];
+        &:hover {
+            background-color: #cores[secundaria-hover];
+        }
+    }
+}
